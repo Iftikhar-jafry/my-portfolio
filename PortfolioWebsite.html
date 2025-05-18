@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <div class="animated-bg">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <header>
+        <!-- <img src="hello.JPG" alt="Header Background"> -->
+        <div class="header-content">
+            <h1>This is IFTIKHAR JAFRY</h1>
+            <p class="typewriter">Full Stack Developer | AI Specialist | UI/UX Designer</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>I'm a <strong>passionate tech innovator</strong> with expertise in building cutting-edge digital solutions that merge creativity with technical excellence. With over 5 years of experience in full-stack development, I specialize in creating intelligent applications that leverage the power of AI to solve complex problems.</p>
+                <p>My journey in technology began with traditional web development, but I quickly became fascinated with emerging technologies like <strong>machine learning</strong> and <strong>artificial intelligence</strong>. Today, I combine deep technical knowledge with a keen eye for design to create seamless, intuitive, and intelligent digital experiences.</p>
+                <p>I believe in continuous learning and staying ahead of technology trends. When I'm not coding, you'll find me exploring the latest AI research, contributing to open-source projects, or mentoring upcoming developers.</p>
+            </div>
+            <div class="skill-bars">
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <h4>Full Stack Development</h4>
+                        <span>95%</span>
+                    </div>
+                    <div class="skill-progress-bg">
+                        <div class="skill-progress" style="width: 95%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="resume-container">
+            <a href="resume.pdf" target="_blank" download>Download My Resume</a>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="projects-grid" id="projects-grid">  
+            <div class="card">
+                <img src="Asset/1.jpeg" alt="AI-Powered E-Commerce Platform">
+                <h3><a href="https://github.com/username/ai-ecommerce" target="_blank">AI-Powered E-Commerce Platform</a></h3>
+                <h4 class="tech-tool">Tech and Tools</h4>
+                <div class="technologies">
+                    <span class="technology">React</span>
+                    <span class="technology">Node.js</span>
+                    <span class="technology ai-tech">TensorFlow</span>
+                    <span class="technology">MongoDB</span>
+                    <span class="technology ai-tech">NLP</span>
+                </div>            
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <h2>Services</h2>
+        <div id="services-grid" class="services-grid">
+            <!-- <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Data Analyst</h3>
+                <p>Custom web applications built with modern technologies and best practices.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Responsive Design</li>
+                    <li><i class="fas fa-check"></i> Modern Frameworks</li>
+                    <li><i class="fas fa-check"></i> Performance Optimization</li>
+                </ul>
+                <a href="#contact" class="service-btn">Get Started</a>
+            </div>
+
+            <div class="service-card ai-service">
+                <div class="service-icon ai-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Intelligent Analytics</h3>
+                <p>Transform your data into actionable business intelligence.</p>
+                <ul class="service-features ai-features">
+                    <li><i class="fas fa-check"></i> Predictive Modeling</li>
+                    <li><i class="fas fa-check"></i> Customer Insights</li>
+                    <li><i class="fas fa-check"></i> Real-time Data Visualization</li>
+                </ul>
+                <a href="#contact" class="service-btn ai-btn">Get Started</a>
+            </div> -->
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Get In Touch</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+
+    <!-- Services Dropdown -->
+    <!-- <label for="service">Select a Service</label>
+    <select id="service" name="service" required>
+      <option value="" disabled selected>Select a service</option>
+      <option value="data-analyst">Data Analyst</option>
+    </select> -->
+
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        <!-- <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div> -->
+    </footer>
+    <script src="TagCreation.js" type="module"></script>
+    <script src="portfolio.js">  </script>
+</body>
+</html>
