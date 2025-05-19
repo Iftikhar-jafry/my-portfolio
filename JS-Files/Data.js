@@ -1,10 +1,16 @@
 const Helper=(function(){
+
+    function AboutData()
+    {
+        const about = "<p>I'm a <strong>passionate tech innovator</strong> with expertise in building cutting-edge digital solutions that merge creativity with technical excellence. With over 5 years of experience in full-stack development, I specialize in creating intelligent applications that leverage the power of AI to solve complex problems.</p><p>My journey in technology began with traditional web development, but I quickly became fascinated with emerging technologies like <strong>machine learning</strong> and <strong>artificial intelligence</strong>. Today, I combine deep technical knowledge with a keen eye for design to create seamless, intuitive, and intelligent digital experiences.</p><p>I believe in continuous learning and staying ahead of technology t";
+        return about
+    }
+
     function SkillData()
     {
         const skills = [
             { name: "Machine Learning", level: "95%" },
             { name: "Deep Learning", level: "90%" },
-            { name: "UI/UX Design", level: "85%" },
             { name: "Data Science & Analytics", level: "80%"},
             { name: "Web Scraping", level: "90%"}
         ];
@@ -17,25 +23,19 @@ const Helper=(function(){
         const projects = [
         {
             image: "Asset/2.jpeg",
-            title: "AI-Powered E-Commerce Platform",
-            link: "https://github.com/username/ai-ecommerce",
+            title: "Web Scraping of WhatMobile Website",
+            link: "https://github.com/Iftikhar-jafry/FirstWebScraping.git",
             description: "sinesses.",
-            technologies: ["React", "Node.js", "TensorFlow", "MongoDB", "NLP"]
+            technologies: ["Python","Pandas","Beautiful Soup", "Selenium" ,"Jupyter Notebook"]
         },
         {
             image: "Asset/2.jpeg",
-            title: "Intelligent Task Management App",
-            link: "https://github.com/username/smart-tasks",
+            title: "Web Scraping of MobileInfo Website",
+            link: "https://github.com/Iftikhar-jafry/Mobile-Info-Website-data-Extraction.git",
             description: "A achine learning to ada0%.",
-            technologies: ["Vue.js", "Express", "PyTorch", "PostgreSQL", "Machine Learning"]
+            technologies: ["Python","Pandas","Beautiful Soup", "Selenium" ,"Jupyter Notebook"]
         },
-        {
-            image: "project3.jpg",
-            title: "AI Content Studio",
-            link: "https://github.com/username/ai-content-studio",
-            description: "A sophisticated content generation platform that leverages advanced language models to create high-quality, SEO-optimized articles, social media posts, and marketing copy. The tool includes sentiment analysis, readability scoring, and automatic content adaptation for different audience demographics.",
-            technologies: ["Next.js", "FastAPI", "Transformers", "Redis", "GPT Models"]
-        }
+        
         ];
         return projects;
     }
@@ -46,62 +46,39 @@ const Helper=(function(){
     {
         const servicesData = [
         {
-            icon: "fa-code",
-            title: "Data Analyst",
+            title: "Web Development",
             description: "Custom web applications built with modern technologies and best practices.",
-            features: ["Responsive Design", "Modern Frameworks", "Performance Optimization"],
-            ai: false,
+            features: [
+                "Responsive Design",
+                "Modern Frameworks",
+                "Performance Optimization"
+            ],
+            icon: "fas fa-code",
+            isAI: false
         },
         {
-            icon: "fa-brain",
-            title: "AI Integration",
-            description: "Enhance your applications with intelligent AI capabilities.",
-            features: ["Predictive Analytics", "Natural Language Processing", "Recommendation Systems"],
-            ai: true,
+            title: "AI Solutions",
+            description: "Harnessing the power of AI to drive innovation and efficiency.",
+            features: [
+                "Machine Learning",
+                "Deep Learning",
+                "Natural Language Processing"
+            ],
+            icon: "fas fa-brain",
+            isAI: true
         },
-        {
-            icon: "fa-paint-brush",
-            title: "UI/UX Design",
-            description: "Beautiful and intuitive user interfaces that enhance user experience.",
-            features: ["User Research", "Wireframing", "Prototyping"],
-            ai: false,
-        },
-        {
-            icon: "fa-robot",
-            title: "Machine Learning Solutions",
-            description: "Custom machine learning models to solve your business challenges.",
-            features: ["Data Mining & Analysis", "Computer Vision", "Automated Decision Systems"],
-            ai: true,
-        },
-        {
-            icon: "fa-mobile-alt",
-            title: "Mobile Development",
-            description: "Cross-platform mobile applications that work seamlessly on all devices.",
-            features: ["Native Apps", "Cross-Platform", "App Store Optimization"],
-            ai: false,
-        },
-        {
-            icon: "fa-chart-line",
-            title: "Intelligent Analytics",
-            description: "Transform your data into actionable business intelligence.",
-            features: ["Predictive Modeling", "Customer Insights", "Real-time Data Visualization"],
-            ai: true,
-        },
-        {
-            icon: "fa-chart-line",
-            title: "Intelligent Analytics",
-            description: "Transform your data into actionable business intelligence.",
-            features: ["Predictive Modeling", "Customer Insights", "Real-time Data Visualization"],
-            ai: true,
-        },
-        {
-            icon: "fa-chart-line",
-            title: "Intelligent Analytics",
-            description: "Transform your data into actionable business intelligence.",
-            features: ["Predictive Modeling", "Customer Insights", "Real-time Data Visualization"],
-            ai: true,
-        }
-        ];
+        // {
+        //     title: "UI/UX Design",
+        //     description: "Creating intuitive and engaging user experiences.",
+        //     features: [
+        //         "User Research",
+        //         "Wireframing & Prototyping",
+        //         "Visual Design"
+        //     ],
+        //     icon: "fas fa-palette",
+        //     isAI: false
+        // }
+    ];
 
         return servicesData;
 
@@ -119,6 +96,7 @@ const Helper=(function(){
     }
 
     return {
+        AboutData:AboutData,
         SkillData:SkillData,
         ProjectData:ProjectData,
         ServiceData:ServiceData,

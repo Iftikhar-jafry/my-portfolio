@@ -6,6 +6,9 @@
     <title>My Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="CSS Files/portfolio.css">
 </head>
 <body>
@@ -18,7 +21,6 @@
     </div>
 
     <header>
-        <!-- <img src="hello.JPG" alt="Header Background"> -->
         <div class="header-content">
             <h1>This is IFTIKHAR JAFRY</h1>
             <p class="typewriter">Full Stack Developer | AI Specialist | UI/UX Designer</p>
@@ -38,9 +40,7 @@
         <h2>About Me</h2>
         <div class="about-grid">
             <div class="about-text">
-                <p>I'm a <strong>passionate tech innovator</strong> with expertise in building cutting-edge digital solutions that merge creativity with technical excellence. With over 5 years of experience in full-stack development, I specialize in creating intelligent applications that leverage the power of AI to solve complex problems.</p>
-                <p>My journey in technology began with traditional web development, but I quickly became fascinated with emerging technologies like <strong>machine learning</strong> and <strong>artificial intelligence</strong>. Today, I combine deep technical knowledge with a keen eye for design to create seamless, intuitive, and intelligent digital experiences.</p>
-                <p>I believe in continuous learning and staying ahead of technology trends. When I'm not coding, you'll find me exploring the latest AI research, contributing to open-source projects, or mentoring upcoming developers.</p>
+                <!-- Here text come from Javascript -->
             </div>
             <div class="skill-bars">
                 <div class="skill-bar">
@@ -49,7 +49,25 @@
                         <span>95%</span>
                     </div>
                     <div class="skill-progress-bg">
-                        <div class="skill-progress" style="width: 95%;"></div>
+                        <div class="skill-progress" style="--width: 95%;"></div>
+                    </div>
+                </div>
+                 <div class="skill-bar">
+                    <div class="skill-info">
+                        <h4>AI Development</h4>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-progress-bg">
+                        <div class="skill-progress" style="--width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <h4>UI/UX Design</h4>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-progress-bg">
+                        <div class="skill-progress" style="--width: 90%;"></div>
                     </div>
                 </div>
             </div>
@@ -61,10 +79,12 @@
 
     <section id="projects" class="section">
         <h2>My Projects</h2>
-        <div class="projects-grid" id="projects-grid">  
+        <div class="projects-grid" id="projects-grid">
             <div class="card">
                 <img src="Asset/1.jpeg" alt="AI-Powered E-Commerce Platform">
-                <h3><a href="https://github.com/username/ai-ecommerce" target="_blank">AI-Powered E-Commerce Platform</a></h3>
+                <a href="https://github.com/Iftikhar-jafry/Mobile-Info-Website-data-Extraction.git" target="_blank" rel="noopener noreferrer">
+                    AI-Powered E-Commerce Platform
+                </a>
                 <h4 class="tech-tool">Tech and Tools</h4>
                 <div class="technologies">
                     <span class="technology">React</span>
@@ -72,19 +92,45 @@
                     <span class="technology ai-tech">TensorFlow</span>
                     <span class="technology">MongoDB</span>
                     <span class="technology ai-tech">NLP</span>
-                </div>            
+                </div>
             </div>
+             <!-- <div class="card">
+                <img src="Asset/2.jpeg" alt="Smart Farming Solutions">
+                <a href="https://github.com/Iftikhar-jafry/Smart-Farming-Solution" target="_blank" rel="noopener noreferrer">
+                    Smart Farming Solutions
+                </a>
+                <h4 class="tech-tool">Tech and Tools</h4>
+                <div class="technologies">
+                    <span class="technology">Python</span>
+                    <span class="technology ai-tech">TensorFlow</span>
+                    <span class="technology ai-tech">Computer Vision</span>
+                    <span class="technology">Raspberry Pi</span>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Asset/3.jpeg" alt="AI Chatbot">
+                <a href="https://github.com/Iftikhar-jafry/Generic-Chatbot" target="_blank" rel="noopener noreferrer">
+                   AI Chatbot
+                </a>
+                <h4 class="tech-tool">Tech and Tools</h4>
+                <div class="technologies">
+                    <span class="technology">React</span>
+                    <span class="technology">Node.js</span>
+                    <span class="technology ai-tech">Dialogflow</span>
+                    <span class="technology">Firebase</span>
+                </div>
+            </div> -->
         </div>
     </section>
 
     <section id="services" class="section">
         <h2>Services</h2>
-        <div id="services-grid" class="services-grid">
-            <!-- <div class="service-card">
+        <div  class="services-grid">
+            <div class="service-card">
                 <div class="service-icon">
                     <i class="fas fa-code"></i>
                 </div>
-                <h3>Data Analyst</h3>
+                <h3>Web Development</h3>
                 <p>Custom web applications built with modern technologies and best practices.</p>
                 <ul class="service-features">
                     <li><i class="fas fa-check"></i> Responsive Design</li>
@@ -96,34 +142,39 @@
 
             <div class="service-card ai-service">
                 <div class="service-icon ai-icon">
-                    <i class="fas fa-chart-line"></i>
+                    <i class="fas fa-brain"></i>
                 </div>
-                <h3>Intelligent Analytics</h3>
-                <p>Transform your data into actionable business intelligence.</p>
+                <h3>AI Solutions</h3>
+                <p>Harnessing the power of AI to drive innovation and efficiency.</p>
                 <ul class="service-features ai-features">
-                    <li><i class="fas fa-check"></i> Predictive Modeling</li>
-                    <li><i class="fas fa-check"></i> Customer Insights</li>
-                    <li><i class="fas fa-check"></i> Real-time Data Visualization</li>
+                    <li><i class="fas fa-check"></i> Machine Learning</li>
+                    <li><i class="fas fa-check"></i> Deep Learning</li>
+                    <li><i class="fas fa-check"></i> Natural Language Processing</li>
                 </ul>
                 <a href="#contact" class="service-btn ai-btn">Get Started</a>
-            </div> -->
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Creating intuitive and engaging user experiences.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> User Research</li>
+                    <li><i class="fas fa-check"></i> Wireframing & Prototyping</li>
+                    <li><i class="fas fa-check"></i> Visual Design</li>
+                </ul>
+                <a href="#contact" class="service-btn">Get Started</a>
+            </div>
         </div>
     </section>
 
     <section id="contact" class="section">
         <h2>Get In Touch</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-
-    <!-- Services Dropdown -->
-    <!-- <label for="service">Select a Service</label>
-    <select id="service" name="service" required>
-      <option value="" disabled selected>Select a service</option>
-      <option value="data-analyst">Data Analyst</option>
-    </select> -->
-
-            <textarea placeholder="Your Message" rows="5" required></textarea>
+        <form class="contact-form"  action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>

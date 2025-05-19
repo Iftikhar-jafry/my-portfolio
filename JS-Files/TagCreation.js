@@ -1,6 +1,11 @@
 import Helper from "./Data.js";
     console.log(Helper.ServiceData)
 
+// About Me description Start
+    const about=Helper.AboutData()
+    const about_text=document.querySelector('.about-text');
+    about_text.innerHTML=about;
+
 // SkillBar Start
     // console.log(Helper.SkillData)
     const skills=Helper.SkillData();
@@ -60,8 +65,8 @@ import Helper from "./Data.js";
         const link = document.createElement("a");
         link.href = project.link;
         link.target = "_blank";
-        link.textContent = project.title;
-        title.appendChild(link);
+        title.textContent = project.title;
+        link.appendChild(title);
 
         const tech_tool = document.createElement("h4");
         tech_tool.className="tech-tool"
@@ -89,7 +94,7 @@ import Helper from "./Data.js";
         });
 
         card.appendChild(img);
-        card.appendChild(title);
+        card.appendChild(link);
         card.appendChild(tech_tool);
         card.appendChild(techContainer);
 
@@ -100,63 +105,52 @@ import Helper from "./Data.js";
 // Start Service Data
 
     const services=Helper.ServiceData()
-
-    const servicesContainer=document.querySelector('#services-grid');
-
-    services.forEach(service=>{
-        const card=document.createElement('div');
-        const icon=document.createElement('div');
-        const anchor=document.createElement('a');
-        const ul=document.createElement('ul');
-        anchor.textContent="Get Started"
-        anchor.href="#contact";
-        if(service.ai==true)
-        {
-            card.classList.add("service-card", "ai-service")
-            icon.classList.add("service-icon", "ai-icon");
-            ul.classList.add("service-features","ai-features")
-            anchor.classList.add('service-btn','ai-btn');
-            
-        }
-        else
-        {
-            card.classList.add('service-card');
-            icon.classList.add('service-icon');
-            ul.classList.add("service-features");
-            anchor.classList.add('service-btn');
-        }
     
-        const icon_i=document.createElement('i');
-        
+    function createServiceCard(service) {
+        const card = document.createElement("div");
+        card.className = service.isAI ? "service-card ai-service" : "service-card";
 
-        icon_i.classList.add('fa',service.icon)
+        const iconDiv = document.createElement("div");
+        iconDiv.className = service.isAI ? "service-icon ai-icon" : "service-icon";
+        const icon = document.createElement("i");
+        icon.className = service.icon;
+        iconDiv.appendChild(icon);
 
+        const title = document.createElement("h3");
+        title.textContent = service.title;
 
+        const description = document.createElement("p");
+        description.textContent = service.description;
 
-        const h3=document.createElement('h3');
-        h3.textContent=service.title;
-        console.log(service.title)
-        const para=document.createElement('p');
-        para.textContent=service.description;
-
-        service.features.forEach(feature=>{
-            const li=document.createElement('li');
-            const i=document.createElement('i');
-            i.classList.add("fas","fa-check");
-            li.appendChild(i);
-            li.appendChild(document.createTextNode(""+feature));
-            ul.appendChild(li);
+        const featuresList = document.createElement("ul");
+        featuresList.className = service.isAI ? "service-features ai-features" : "service-features";
+        service.features.forEach(feature => {
+            const listItem = document.createElement("li");
+            const checkIcon = document.createElement("i");
+            checkIcon.className = "fas fa-check";
+            listItem.appendChild(checkIcon);
+            listItem.textContent = feature;
+            featuresList.appendChild(listItem);
         });
 
-        icon.appendChild(icon_i);
-        card.appendChild(h3);
-        card.appendChild(para);
-        card.appendChild(ul);
-        card.appendChild(anchor);
+        const button = document.createElement("a");
+        button.href = "#contact";
+        button.className = service.isAI ? "service-btn ai-btn" : "service-btn";
+        button.textContent = "Get Started";
 
-        servicesContainer.appendChild(card);
+        card.appendChild(iconDiv);
+        card.appendChild(title);
+        card.appendChild(description);
+        card.appendChild(featuresList);
+        card.appendChild(button);
 
+        return card;
+    }
 
+    const servicesGrid = document.querySelector(".services-grid");
+    services.forEach(service => {
+        const card = createServiceCard(service);
+        servicesGrid.appendChild(card);
     });
 // End Services
 
