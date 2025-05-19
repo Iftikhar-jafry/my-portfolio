@@ -23,7 +23,7 @@ const Helper=(function(){
         const projects = [
         {
             title: "AI-Powered E-Commerce Platform",
-            imageUrl: "Asset/1.jpeg",
+            imageUrl: "About/Asset/1.jpeg",
             link: "https://github.com/Iftikhar-jafry/Mobile-Info-Website-data-Extraction.git",
             technologies: [
                 "React",
