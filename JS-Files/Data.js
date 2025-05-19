@@ -22,21 +22,40 @@ const Helper=(function(){
     {
         const projects = [
         {
-            image: "Asset/2.jpeg",
-            title: "Web Scraping of WhatMobile Website",
-            link: "https://github.com/Iftikhar-jafry/FirstWebScraping.git",
-            description: "sinesses.",
-            technologies: ["Python","Pandas","Beautiful Soup", "Selenium" ,"Jupyter Notebook"]
+            title: "AI-Powered E-Commerce Platform",
+            imageUrl: "Asset/1.jpeg",
+            link: "https://github.com/Iftikhar-jafry/Mobile-Info-Website-data-Extraction.git",
+            technologies: [
+                "React",
+                "Node.js",
+                "TensorFlow",
+                "MongoDB",
+                "NLP"
+            ]
         },
         {
-            image: "Asset/2.jpeg",
-            title: "Web Scraping of MobileInfo Website",
-            link: "https://github.com/Iftikhar-jafry/Mobile-Info-Website-data-Extraction.git",
-            description: "A achine learning to ada0%.",
-            technologies: ["Python","Pandas","Beautiful Soup", "Selenium" ,"Jupyter Notebook"]
+            title: "Smart Farming Solutions",
+            imageUrl: "Asset/2.jpeg",
+            link: "https://github.com/Iftikhar-jafry/Smart-Farming-Solution",
+            technologies: [
+                "Python",
+                "TensorFlow",
+                "Computer Vision",
+                "Raspberry Pi"
+            ]
         },
-        
-        ];
+        {
+            title: "AI Chatbot",
+            imageUrl: "Asset/3.jpeg",
+            link: "https://github.com/Iftikhar-jafry/Generic-Chatbot",
+            technologies: [
+                "React",
+                "Node.js",
+                "Dialogflow",
+                "Firebase"
+            ]
+        }
+    ];
         return projects;
     }
     // Projects Data End

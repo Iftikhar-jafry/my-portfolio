@@ -49,58 +49,51 @@ import Helper from "./Data.js";
 
 
 // Start of Project Section
-    const projects=Helper.ProjectData();
-    
-    const projectsContainer = document.querySelector("#projects-grid");
+    const projects=Helper.ProjectData()
 
-    projects.forEach(project => {
+    function createProjectCard(project) {
         const card = document.createElement("div");
-        card.classList.add("card");
+        card.className = "card";
 
-        const img = document.createElement("img");
-        img.src = project.image;
-        img.alt = project.title;
+        const image = document.createElement("img");
+        image.src = project.imageUrl;
+        image.alt = project.title;
 
-        const title = document.createElement("h3");
         const link = document.createElement("a");
         link.href = project.link;
         link.target = "_blank";
-        title.textContent = project.title;
-        link.appendChild(title);
+        link.rel = "noopener noreferrer";
+        link.textContent = project.title;
 
-        const tech_tool = document.createElement("h4");
-        tech_tool.className="tech-tool"
-        tech_tool.textContent = "Techs and Tools";
+        const techTitle = document.createElement("h4");
+        techTitle.className = "tech-tool";
+        techTitle.textContent = "Tech and Tools";
 
-        const techContainer = document.createElement("div");
-        techContainer.classList.add("technologies");
+        const technologiesDiv = document.createElement("div");
+        technologiesDiv.className = "technologies";
 
         project.technologies.forEach(tech => {
             const techSpan = document.createElement("span");
-            techSpan.classList.add("technology");
-            if (
-                tech.toLowerCase().includes("ai") ||
-                tech.toLowerCase().includes("ml") ||
-                tech.toLowerCase().includes("gpt") ||
-                tech.toLowerCase().includes("nlp") ||
-                tech.toLowerCase().includes("transformers") ||
-                tech.toLowerCase().includes("pytorch") ||
-                tech.toLowerCase().includes("tensorflow")
-            ) {
-                techSpan.classList.add("ai-tech");
-            }
+            techSpan.className = tech.includes("TensorFlow") || tech.includes("NLP") || tech.includes("Dialogflow") || tech.includes("Computer Vision") ? "technology ai-tech" : "technology";
             techSpan.textContent = tech;
-            techContainer.appendChild(techSpan);
+            technologiesDiv.appendChild(techSpan);
         });
 
-        card.appendChild(img);
+        card.appendChild(image);
         card.appendChild(link);
-        card.appendChild(tech_tool);
-        card.appendChild(techContainer);
+        card.appendChild(techTitle);
+        card.appendChild(technologiesDiv);
 
-        projectsContainer.appendChild(card);
+        return card;
+    }
+
+    const projectsGrid = document.querySelector("#projects-grid");
+    projects.forEach(project => {
+        const card = createProjectCard(project);
+        projectsGrid.appendChild(card);
     });
 // End Project Data
+
 
 // Start Service Data
 
