@@ -12,7 +12,8 @@ const Helper=(function(){
             { name: "Machine Learning", level: "95%" },
             { name: "Deep Learning", level: "90%" },
             { name: "Data Science & Analytics", level: "80%"},
-            { name: "Web Scraping", level: "90%"}
+            { name: "Web Scraping", level: "90%"},
+            { name: "Iftikhar hussain", level: "90%"}
         ];
         return skills;
     }
