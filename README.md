@@ -4,7 +4,6 @@ Welcome to my **Personal Portfolio Website**! This project showcases my skills, 
 ---
 🌐 Live Demo: <a href="https://iftikhar-jafry.github.io/my-portfolio/index.html" target="_blank">Visit My Website</a>
 ---
-<a href="https://iftikhar-jafry.github.io/my-portfolio/index.html" target="_blank" rel="noopener noreferrer">Visit My Website</a>
 
 ## Features
 - **Responsive Design**: The portfolio is mobile-friendly and adapts to different screen sizes.
