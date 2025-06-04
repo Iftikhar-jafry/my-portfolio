@@ -2,7 +2,7 @@
 
 Welcome to my **Personal Portfolio Website**! This project showcases my skills, projects, and services in a visually engaging manner using **HTML**, **CSS**, and **JavaScript**.
 ---
-🌐 Live Demo: <a href="https://iftikhar-jafry.github.io/About/index.html">Visit My Website</a>
+🌐 Live Demo: <a href="https://iftikhar-jafry.github.io/my-portfolio/index.html" target="blank">Visit My Website</a>
 ---
 
 ## Features
