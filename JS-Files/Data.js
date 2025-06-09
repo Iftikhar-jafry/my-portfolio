@@ -23,37 +23,73 @@ const Helper=(function(){
     {
         const projects = [
         {
-            title: "AI-Powered E-Commerce Platform",
-            imageUrl: "About/Asset/1.jpeg",
-            link: "https://github.com/Iftikhar-jafry/Mobile-Info-Website-data-Extraction.git",
+            title: "Dialy Expense Management (Offline)",
+            imageUrl: "Asset/pdaily.jpg",
+            link: "https://github.com/Iftikhar-jafry/DailyExpenseCalcOffline.git",
             technologies: [
-                "React",
-                "Node.js",
-                "TensorFlow",
-                "MongoDB",
-                "NLP"
+                "HTML",
+                "CSS",
+                "JavaScript"
             ]
         },
         {
-            title: "Smart Farming Solutions",
-            imageUrl: "Asset/2.jpeg",
-            link: "https://github.com/Iftikhar-jafry/Smart-Farming-Solution",
+            title: "Mobile Data Scraping from Web",
+            imageUrl: "Asset/pwebscrap.jpg",
+            link: "https://github.com/Iftikhar-jafry/FirstWebScraping.git",
             technologies: [
                 "Python",
-                "TensorFlow",
-                "Computer Vision",
-                "Raspberry Pi"
+                "Jupyter Notebook",
+                "Beautiful Soup",
+                "Requests",
+                "Pandas"
             ]
         },
         {
-            title: "AI Chatbot",
-            imageUrl: "Asset/3.jpeg",
-            link: "https://github.com/Iftikhar-jafry/Generic-Chatbot",
+            title: "Mobile Data Scraping through Selenium",
+            imageUrl: "Asset/pwebscrapselenium.JPG",
+            link: "https://github.com/Iftikhar-jafry/Mobile-Info-Website-data-Extraction.git",
             technologies: [
-                "React",
-                "Node.js",
-                "Dialogflow",
-                "Firebase"
+                "Python",
+                "Jupyter Notebook",
+                "Selenium",
+                "Requests",
+                "Pandas"
+            ]
+        },
+        {
+            title: "Random Password Generator",
+            imageUrl: "Asset/prandompassword.JPG",
+            link: "https://github.com/Iftikhar-jafry/generateRandomPassword.git",
+            technologies: [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Tailwind CSS",
+            ]
+        }
+        ,
+        {
+            title: "Loan Management Web App",
+            imageUrl: "Asset/ploan.JPG",
+            link: "https://github.com/Iftikhar-jafry/Loan-Management.git",
+            technologies: [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Firebase",
+                "Github Hosting"
+            ]
+        }
+        ,
+        {
+            title: "My Portfolio Website",
+            imageUrl: "Asset/pmyportfolio.JPG",
+            link: "https://github.com/Iftikhar-jafry/my-portfolio.git",
+            technologies: [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Github Hosting",
             ]
         }
     ];
