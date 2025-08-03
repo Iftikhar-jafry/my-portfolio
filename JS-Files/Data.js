@@ -22,28 +22,28 @@ const Helper=(function(){
     function ProjectData()
     {
         const projects = [
-        // {
-        //     title: "Dialy Expense Management (Offline)",
-        //     imageUrl: "Asset/pdaily.jpg",
-        //     link: "https://github.com/Iftikhar-jafry/DailyExpenseCalcOffline.git",
-        //     technologies: [
-        //         "HTML",
-        //         "CSS",
-        //         "JavaScript"
-        //     ]
-        // },
-        // {
-        //     title: "Mobile Data Scraping from Web",
-        //     imageUrl: "Asset/pwebscrap.jpg",
-        //     link: "https://github.com/Iftikhar-jafry/FirstWebScraping.git",
-        //     technologies: [
-        //         "Python",
-        //         "Jupyter Notebook",
-        //         "Beautiful Soup",
-        //         "Requests",
-        //         "Pandas"
-        //     ]
-        // },
+        {
+            title: "Dialy Expense Management (Offline)",
+            imageUrl: "Asset/pdaily.jpg",
+            link: "https://github.com/Iftikhar-jafry/DailyExpenseCalcOffline.git",
+            technologies: [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ]
+        },
+        {
+            title: "Mobile Data Scraping from Web",
+            imageUrl: "Asset/pwebscrap.jpg",
+            link: "https://github.com/Iftikhar-jafry/FirstWebScraping.git",
+            technologies: [
+                "Python",
+                "Jupyter Notebook",
+                "Beautiful Soup",
+                "Requests",
+                "Pandas"
+            ]
+        },
         {
             title: "Mobile Data Scraping through Selenium",
             imageUrl: "Asset/pwebscrapselenium.JPG",
@@ -95,7 +95,7 @@ const Helper=(function(){
         ,
         {
             title: "Writing Essays Web App",
-            imageUrl: "Asset\Essay_Writing.JPG",
+            imageUrl: "Asset/Essay_Writing.JPG",
             link: "https://github.com/Iftikhar-jafry/Essay_Writing_WebApp.git",
             technologies: [
                 "HTML",
@@ -109,7 +109,7 @@ const Helper=(function(){
         ,
         {
             title: "Daily_Essay_Writing_Web_App",
-            imageUrl: "Asset\DailyWritingView.JPG",
+            imageUrl: "Asset/DailyWritingView.JPG",
             link: "https://github.com/Iftikhar-jafry/Daily_Essay_Writing_Web_App.git",
             technologies: [
                 "HTML",
