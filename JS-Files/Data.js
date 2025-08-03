@@ -92,6 +92,32 @@ const Helper=(function(){
                 "Github Hosting",
             ]
         }
+        ,
+        {
+            title: "Writing Essays Web App",
+            imageUrl: "Asset\Essay_Writing.JPG",
+            link: "https://github.com/Iftikhar-jafry/Essay_Writing_WebApp.git",
+            technologies: [
+                "HTML",
+                "Bootstrap",
+                "Jinja Templates",
+                "Flask",
+                "Python",
+                "SQLAlchemy",
+            ]
+        }
+        ,
+        {
+            title: "Daily_Essay_Writing_Web_App",
+            imageUrl: "Asset\DailyWritingView.JPG",
+            link: "https://github.com/Iftikhar-jafry/Daily_Essay_Writing_Web_App.git",
+            technologies: [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Local Storage",
+            ]
+        }
     ];
         return projects;
     }
