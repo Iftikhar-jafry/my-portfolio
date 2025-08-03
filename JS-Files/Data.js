@@ -22,28 +22,28 @@ const Helper=(function(){
     function ProjectData()
     {
         const projects = [
-        {
-            title: "Dialy Expense Management (Offline)",
-            imageUrl: "Asset/pdaily.jpg",
-            link: "https://github.com/Iftikhar-jafry/DailyExpenseCalcOffline.git",
-            technologies: [
-                "HTML",
-                "CSS",
-                "JavaScript"
-            ]
-        },
-        {
-            title: "Mobile Data Scraping from Web",
-            imageUrl: "Asset/pwebscrap.jpg",
-            link: "https://github.com/Iftikhar-jafry/FirstWebScraping.git",
-            technologies: [
-                "Python",
-                "Jupyter Notebook",
-                "Beautiful Soup",
-                "Requests",
-                "Pandas"
-            ]
-        },
+        // {
+        //     title: "Dialy Expense Management (Offline)",
+        //     imageUrl: "Asset/pdaily.jpg",
+        //     link: "https://github.com/Iftikhar-jafry/DailyExpenseCalcOffline.git",
+        //     technologies: [
+        //         "HTML",
+        //         "CSS",
+        //         "JavaScript"
+        //     ]
+        // },
+        // {
+        //     title: "Mobile Data Scraping from Web",
+        //     imageUrl: "Asset/pwebscrap.jpg",
+        //     link: "https://github.com/Iftikhar-jafry/FirstWebScraping.git",
+        //     technologies: [
+        //         "Python",
+        //         "Jupyter Notebook",
+        //         "Beautiful Soup",
+        //         "Requests",
+        //         "Pandas"
+        //     ]
+        // },
         {
             title: "Mobile Data Scraping through Selenium",
             imageUrl: "Asset/pwebscrapselenium.JPG",
