@@ -24,7 +24,7 @@ const Helper=(function(){
         const projects = [
         {
             title: "Dialy Expense Management (Offline)",
-            imageUrl: "Asset/pdaily.jpg",
+            imageUrl: "Asset/pdaily.JPG",
             link: "https://github.com/Iftikhar-jafry/DailyExpenseCalcOffline.git",
             technologies: [
                 "HTML",
@@ -34,7 +34,7 @@ const Helper=(function(){
         },
         {
             title: "Mobile Data Scraping from Web",
-            imageUrl: "Asset/pwebscrap.jpg",
+            imageUrl: "Asset/pwebscrap.JPG",
             link: "https://github.com/Iftikhar-jafry/FirstWebScraping.git",
             technologies: [
                 "Python",
