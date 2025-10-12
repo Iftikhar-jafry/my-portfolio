@@ -13,7 +13,7 @@ const Helper=(function(){
             { name: "Deep Learning", level: "90%" },
             { name: "Data Science & Analytics", level: "80%"},
             { name: "Web Scraping", level: "90%"},
-            {name: "Application Developement", level: "75%"},
+            {name: "Application Development", level: "75%"},
         ];
         return skills;
     }
