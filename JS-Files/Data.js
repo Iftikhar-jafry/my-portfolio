@@ -13,6 +13,7 @@ const Helper=(function(){
             { name: "Deep Learning", level: "90%" },
             { name: "Data Science & Analytics", level: "80%"},
             { name: "Web Scraping", level: "90%"},
+            {name: "Application Developement", level: "75%"},
         ];
         return skills;
     }
@@ -144,6 +145,24 @@ const Helper=(function(){
                 "Machine Learning",
                 "Deep Learning",
                 "Natural Language Processing"
+            ],
+            icon: "fas fa-brain",
+            isAI: true
+        },
+         {
+            title: "Application Development in Flutter",
+            description: "Developing the application in flutter.",
+            features: [
+                "VS Code",
+                "Android Studio",
+                "Dart  Language",
+                "API Integration",
+                "State Management",
+                "UI/UX Design",
+                "Cross-Platform Development",
+                "Performance Optimization",
+                "Testing & Debugging",
+                "Deployment",
             ],
             icon: "fas fa-brain",
             isAI: true
