@@ -131,6 +131,20 @@ const Helper=(function(){
                 "SQLAlchemy",
                 "Python",
             ]
+        },
+        {
+            title: "SMS Spam Classifier, Streamlit Dashboard",
+            imageUrl: "Asset/sms_spam.JPG",
+            link: "https://github.com/Iftikhar-jafry/Sms_Email_Spam_Classifier.git",
+            technologies: [
+                "Streamlit",
+                "Pandas",
+                "Scikit-learn",
+                "Python",
+                "matplotlib",
+                "seaborn",
+                "wordcloud",
+            ]
         }
     ];
         return projects;
