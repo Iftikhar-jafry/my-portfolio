@@ -117,6 +117,20 @@ const Helper=(function(){
                 "JavaScript",
                 "Local Storage",
             ]
+        },
+        {
+            title: "Tech Vault Web App",
+            imageUrl: "Asset/Tech_Vault.JPG",
+            link: "https://github.com/Iftikhar-jafry/Tech_Vault.git",
+            technologies: [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "SQLite",
+                "Flask",
+                "SQLAlchemy",
+                "Python",
+            ]
         }
     ];
         return projects;
