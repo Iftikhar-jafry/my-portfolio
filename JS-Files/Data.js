@@ -120,7 +120,7 @@ const Helper=(function(){
         },
         {
             title: "Tech Vault Web App",
-            imageUrl: "Asset/Tech_Vault.JPG",
+            imageUrl: "Asset/tech_vault.JPG",
             link: "https://github.com/Iftikhar-jafry/Tech_Vault.git",
             technologies: [
                 "HTML",
