@@ -1,0 +1,91 @@
+/* Dark/light theme toggle styles. The existing design remains the default light theme. */
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    padding: 0.55rem 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 999px;
+    background: transparent;
+    color: #fff;
+    font: inherit;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+    background: rgba(255, 255, 255, 0.14);
+    outline: 2px solid #f1c40f;
+    outline-offset: 2px;
+}
+body,
+header,
+nav,
+section,
+.card,
+.service-card,
+.contact-form input,
+.contact-form select,
+.contact-form textarea,
+footer {
+    transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+body.dark-mode {
+    background-color: #111827;
+    color: #e5e7eb;
+    color-scheme: dark;
+}
+body.dark-mode header { background-color: #111827; color: #f9fafb; }
+body.dark-mode nav { background-color: #0b1220; }
+body.dark-mode section { background-color: #111827; color: #e5e7eb; }
+body.dark-mode #about,
+body.dark-mode #services { background-color: #1f2937; }
+body.dark-mode #projects,
+body.dark-mode #contact { background-color: #111827; }
+body.dark-mode section h2,
+body.dark-mode .skill-info h4,
+body.dark-mode .service-card h3 { color: #f3f4f6; }
+body.dark-mode .about-text,
+body.dark-mode .about-text p,
+body.dark-mode .service-card p,
+body.dark-mode .service-features li,
+body.dark-mode .tech-tool,
+body.dark-mode .skill-info span { color: #cbd5e1; }
+body.dark-mode .card,
+body.dark-mode .service-card {
+    background-color: #273449;
+    color: #e5e7eb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.28);
+}
+body.dark-mode .card a { color: #7dd3fc; }
+body.dark-mode .card a:hover { color: #bae6fd; }
+body.dark-mode .skill-progress-bg { background-color: #475569; }
+body.dark-mode .contact-form input,
+body.dark-mode .contact-form select,
+body.dark-mode .contact-form textarea {
+    background-color: #1f2937;
+    color: #f9fafb;
+    border-color: #475569;
+}
+body.dark-mode .contact-form input::placeholder,
+body.dark-mode .contact-form textarea::placeholder { color: #94a3b8; }
+body.dark-mode .contact-form select option { background-color: #1f2937; color: #f9fafb; }
+body.dark-mode footer {
+    background: #0b1220;
+    color: #e5e7eb;
+}
+body.dark-mode footer .social-links a { color: #cbd5e1; }
+body.dark-mode .animated-bg span { background: #60a5fa; }
+body.dark-mode .active { color: #6ee7b7; }
+@media (max-width: 768px) {
+    nav .nav-container { align-items: center; }
+    .theme-toggle { margin: 0.25rem 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+    body, header, nav, section, .card, .service-card,
+    .contact-form input, .contact-form select, .contact-form textarea, footer {
+        transition: none;
+    }
+}
