@@ -25,7 +25,8 @@ const Helper=(function(){
         const projects = [
         {
             title: "Dialy Expense Management (Offline)",
-            imageUrl: "Asset/pdaily.JPG",
+            Url: "Asset/pdaily.JPG",
+            type:"IMAGE",
             link: "https://github.com/Iftikhar-jafry/DailyExpenseCalcOffline.git",
             technologies: [
                 "HTML",
@@ -35,7 +36,8 @@ const Helper=(function(){
         },
         {
             title: "Mobile Data Scraping from Web",
-            imageUrl: "Asset/pwebscrap.JPG",
+            Url: "Asset/pwebscrap.JPG",
+            type:"IMAGE",
             link: "https://github.com/Iftikhar-jafry/FirstWebScraping.git",
             technologies: [
                 "Python",
@@ -47,7 +49,8 @@ const Helper=(function(){
         },
         {
             title: "Mobile Data Scraping through Selenium",
-            imageUrl: "Asset/pwebscrapselenium.JPG",
+            Url: "Asset/pwebscrapselenium.JPG",
+            type:"IMAGE",
             link: "https://github.com/Iftikhar-jafry/Mobile-Info-Website-data-Extraction.git",
             technologies: [
                 "Python",
@@ -59,7 +62,8 @@ const Helper=(function(){
         },
         {
             title: "Random Password Generator",
-            imageUrl: "Asset/prandompassword.JPG",
+            Url: "Asset/prandompassword.JPG",
+            type:"IMAGE",
             link: "https://github.com/Iftikhar-jafry/generateRandomPassword.git",
             technologies: [
                 "HTML",
@@ -71,7 +75,8 @@ const Helper=(function(){
         ,
         {
             title: "Loan Management Web App",
-            imageUrl: "Asset/ploan.JPG",
+            Url: "Asset/ploan.JPG",
+            type:"IMAGE",
             link: "https://github.com/Iftikhar-jafry/Loan-Management.git",
             technologies: [
                 "HTML",
@@ -84,7 +89,8 @@ const Helper=(function(){
         ,
         {
             title: "My Portfolio Website",
-            imageUrl: "Asset/pmyportfolio.JPG",
+            Url: "Asset/pmyportfolio.JPG",
+            type:"IMAGE",
             link: "https://github.com/Iftikhar-jafry/my-portfolio.git",
             technologies: [
                 "HTML",
@@ -96,7 +102,8 @@ const Helper=(function(){
         ,
         {
             title: "Writing Essays Web App",
-            imageUrl: "Asset/Essay_Writing.JPG",
+            Url: "Asset/Essay_Writing.JPG",
+            type:"IMAGE",
             link: "https://github.com/Iftikhar-jafry/Essay_Writing_WebApp.git",
             technologies: [
                 "HTML",
@@ -110,7 +117,8 @@ const Helper=(function(){
         ,
         {
             title: "Daily_Essay_Writing_Web_App",
-            imageUrl: "Asset/DailyWritingView.JPG",
+            Url: "Asset/DailyWritingView.JPG",
+            type:"IMAGE",
             link: "https://github.com/Iftikhar-jafry/Daily_Essay_Writing_Web_App.git",
             technologies: [
                 "HTML",
@@ -121,7 +129,8 @@ const Helper=(function(){
         },
         {
             title: "Tech Vault Web App",
-            imageUrl: "Asset/tech_vault.JPG",
+            Url: "Asset/tech_vault.JPG",
+            type:"IMAGE",
             link: "https://github.com/Iftikhar-jafry/Tech_Vault.git",
             technologies: [
                 "HTML",
@@ -135,7 +144,8 @@ const Helper=(function(){
         },
         {
             title: "SMS Spam Classifier, Streamlit Dashboard",
-            imageUrl: "Asset/sms_spam.JPG",
+            Url: "Asset/sms_spam.JPG",
+            type:"IMAGE",
             link: "https://github.com/Iftikhar-jafry/Sms_Email_Spam_Classifier.git",
             technologies: [
                 "Streamlit",
@@ -145,6 +155,20 @@ const Helper=(function(){
                 "matplotlib",
                 "seaborn",
                 "wordcloud",
+            ]
+        }
+        , 
+        {
+            title: "UnitedState SuperStore Data Analysis, Streamlit Dashboard",
+            Url: "Asset\\super_store.webm",
+            type:"VIDEO",
+            link: "https://unitedstate-superstore-dataanalysis-duduma6cckcxyv9vnsmtzd.streamlit.app/",
+            technologies: [
+                "Streamlit",
+                "Pandas",
+                "Python",
+                "matplotlib",
+                "seaborn",
             ]
         }
     ];

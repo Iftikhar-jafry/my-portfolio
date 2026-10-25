@@ -54,11 +54,29 @@ import Helper from "./Data.js";
     function createProjectCard(project) {
         const card = document.createElement("div");
         card.className = "card";
+        let imageOrVideo = null;
 
-        const image = document.createElement("img");
-        image.src = project.imageUrl;
-        image.alt = project.title;
+        if(project.type == "IMAGE")
+        {
+            imageOrVideo = document.createElement("img");
+            imageOrVideo.src = project.Url;
+            imageOrVideo.alt = project.title;
 
+        }
+        else
+        {
+            imageOrVideo = document.createElement("video");
+            imageOrVideo.src = project.Url;
+            imageOrVideo.alt = project.title; // video elements don't support alt
+            imageOrVideo.controls = true;
+            imageOrVideo.muted = true;
+            imageOrVideo.loop = true;
+            imageOrVideo.autoplay = true;
+            imageOrVideo.playsInline = true; // For mobile devices
+            imageOrVideo.style.width = "100%"; // Ensure video fits the card
+            // imageOrVideo.style.height = "auto"; // Maintain aspect ratio
+        }
+        
         const link = document.createElement("a");
         link.href = project.link;
         link.target = "_blank";
@@ -79,7 +97,7 @@ import Helper from "./Data.js";
             technologiesDiv.appendChild(techSpan);
         });
 
-        card.appendChild(image);
+        card.appendChild(imageOrVideo);
         card.appendChild(link);
         card.appendChild(techTitle);
         card.appendChild(technologiesDiv);
