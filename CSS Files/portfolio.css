@@ -171,10 +171,10 @@
             to { width: var(--width); } /* Use a CSS variable */
         }
 
-        /* Set the --width variable in your CSS, e.g.: */
-        .skill-progress {
-           --width: 95%; /* Example value, adjust as needed */
-        }
+        /* Set the --width variable in your CSS, e.g.: */ 
+        /* .skill-progress {
+           --width: 55%;
+        }  */
 
 
         .resume-container {

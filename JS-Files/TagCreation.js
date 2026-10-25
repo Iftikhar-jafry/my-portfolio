@@ -35,7 +35,8 @@ import Helper from "./Data.js";
 
         const progress = document.createElement('div');
         progress.classList.add('skill-progress');
-        progress.style.width = skill.level;
+        // progress.style.width = 49;
+        progress.style.width = "19%";
 
         progressBg.appendChild(progress);
 
@@ -115,87 +116,87 @@ import Helper from "./Data.js";
 
 // Start Service Data
 
-    const services=Helper.ServiceData()
+    // const services=Helper.ServiceData()
     
-    function createServiceCard(service) {
-        const card = document.createElement("div");
-        card.className = service.isAI ? "service-card ai-service" : "service-card";
+    // function createServiceCard(service) {
+    //     const card = document.createElement("div");
+    //     card.className = service.isAI ? "service-card ai-service" : "service-card";
 
-        const iconDiv = document.createElement("div");
-        iconDiv.className = service.isAI ? "service-icon ai-icon" : "service-icon";
-        const icon = document.createElement("i");
-        icon.className = service.icon;
-        iconDiv.appendChild(icon);
+    //     const iconDiv = document.createElement("div");
+    //     iconDiv.className = service.isAI ? "service-icon ai-icon" : "service-icon";
+    //     const icon = document.createElement("i");
+    //     icon.className = service.icon;
+    //     iconDiv.appendChild(icon);
 
-        const title = document.createElement("h3");
-        title.textContent = service.title;
+    //     const title = document.createElement("h3");
+    //     title.textContent = service.title;
 
-        const description = document.createElement("p");
-        description.textContent = service.description;
+    //     const description = document.createElement("p");
+    //     description.textContent = service.description;
 
-        const featuresList = document.createElement("ul");
-        featuresList.className = service.isAI ? "service-features ai-features" : "service-features";
-        service.features.forEach(feature => {
-            const listItem = document.createElement("li");
-            const checkIcon = document.createElement("i");
-            checkIcon.className = "fas fa-check";
-            listItem.appendChild(checkIcon);
-            listItem.textContent = feature;
-            featuresList.appendChild(listItem);
-        });
+    //     const featuresList = document.createElement("ul");
+    //     featuresList.className = service.isAI ? "service-features ai-features" : "service-features";
+    //     service.features.forEach(feature => {
+    //         const listItem = document.createElement("li");
+    //         const checkIcon = document.createElement("i");
+    //         checkIcon.className = "fas fa-check";
+    //         listItem.appendChild(checkIcon);
+    //         listItem.textContent = feature;
+    //         featuresList.appendChild(listItem);
+    //     });
 
-        const button = document.createElement("a");
-        button.href = "#contact";
-        button.className = service.isAI ? "service-btn ai-btn" : "service-btn";
-        button.textContent = "Get Started";
+    //     const button = document.createElement("a");
+    //     button.href = "#contact";
+    //     button.className = service.isAI ? "service-btn ai-btn" : "service-btn";
+    //     button.textContent = "Get Started";
 
-        card.appendChild(iconDiv);
-        card.appendChild(title);
-        card.appendChild(description);
-        card.appendChild(featuresList);
-        card.appendChild(button);
+    //     card.appendChild(iconDiv);
+    //     card.appendChild(title);
+    //     card.appendChild(description);
+    //     card.appendChild(featuresList);
+    //     card.appendChild(button);
 
-        return card;
-    }
+    //     return card;
+    // }
 
-    const servicesGrid = document.querySelector(".services-grid");
-    services.forEach(service => {
-        const card = createServiceCard(service);
-        servicesGrid.appendChild(card);
-    });
+    // const servicesGrid = document.querySelector(".services-grid");
+    // services.forEach(service => {
+    //     const card = createServiceCard(service);
+    //     servicesGrid.appendChild(card);
+    // });
 // End Services
 
 // Start Contact Form
 
-    const form = document.querySelector('.contact-form');
+    // const form = document.querySelector('.contact-form');
 
-    // --- Create Label ---
-    const serviceLabel = document.createElement('label');
-    serviceLabel.setAttribute('for', 'service');
-    serviceLabel.textContent = 'Select a Service';
+    // // --- Create Label ---
+    // const serviceLabel = document.createElement('label');
+    // serviceLabel.setAttribute('for', 'service');
+    // serviceLabel.textContent = 'Select a Service';
 
     // --- Create Select ---
-    const serviceSelect = document.createElement('select');
-    serviceSelect.setAttribute('id', 'service');
-    serviceSelect.setAttribute('name', 'service');
-    serviceSelect.required = true;
-    const optionDisable = document.createElement('option');
-    optionDisable.disabled=true;
-    optionDisable.selected=true;
-    optionDisable.textContent="Select Service";
-    serviceSelect.appendChild(optionDisable);
+    // const serviceSelect = document.createElement('select');
+    // serviceSelect.setAttribute('id', 'service');
+    // serviceSelect.setAttribute('name', 'service');
+    // serviceSelect.required = true;
+    // const optionDisable = document.createElement('option');
+    // optionDisable.disabled=true;
+    // optionDisable.selected=true;
+    // optionDisable.textContent="Select Service";
+    // serviceSelect.appendChild(optionDisable);
     // --- Create Options ---
-    services.forEach(service => {
-    const option = document.createElement('option');
-    option.value = service.title;
-    option.textContent = service.title;
-    serviceSelect.appendChild(option);
-    });
+    // services.forEach(service => {
+    // const option = document.createElement('option');
+    // option.value = service.title;
+    // option.textContent = service.title;
+    // serviceSelect.appendChild(option);
+    // });
 
     // --- Append to Form ---
-    form.insertBefore(serviceLabel, form.querySelector('textarea'));
-    form.insertBefore(serviceSelect, form.querySelector('textarea'));
-// End Contact Form
+//     form.insertBefore(serviceLabel, form.querySelector('textarea'));
+//     form.insertBefore(serviceSelect, form.querySelector('textarea'));
+// // End Contact Form
 
 // Start Select service in Contact Form through sevices section
 document.querySelectorAll('.service-card a').forEach(link => {

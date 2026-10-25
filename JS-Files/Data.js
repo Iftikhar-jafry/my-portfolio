@@ -10,10 +10,10 @@ const Helper=(function(){
     function SkillData()
     {
         const skills = [
-            { name: "Machine Learning", level: "95%" },
-            { name: "Deep Learning", level: "90%" },
+            { name: "Machine Learning", level: "70%" },
+            { name: "Deep Learning", level: "60%" },
             { name: "Data Science & Analytics", level: "80%"},
-            { name: "Web Scraping", level: "90%"},
+            { name: "Web Scraping", level: "85%"},
             {name: "Application Development", level: "75%"},
         ];
         return skills;
@@ -24,9 +24,9 @@ const Helper=(function(){
     {
         const projects = [
         {
-            title: "Dialy Expense Management (Offline)",
-            Url: "Asset/pdaily.JPG",
-            type:"IMAGE",
+            title: "Daily Expense Calculator",
+            Url: "Asset\\Daily_Expense_tracker.webm",
+            type:"VIDEO",
             link: "https://github.com/Iftikhar-jafry/DailyExpenseCalcOffline.git",
             technologies: [
                 "HTML",
@@ -177,49 +177,49 @@ const Helper=(function(){
     // Projects Data End
 
     // Services Data Start
-    function ServiceData()
-    {
-        const servicesData = [
-        {
-            title: "Web Development",
-            description: "Custom web applications built with modern technologies and best practices.",
-            features: [
-                "Responsive Design",
-                "Modern Frameworks",
-                "Performance Optimization"
-            ],
-            icon: "fas fa-code",
-            isAI: false
-        },
-        {
-            title: "AI Solutions",
-            description: "Harnessing the power of AI to drive innovation and efficiency.",
-            features: [
-                "Machine Learning",
-                "Deep Learning",
-                "Natural Language Processing"
-            ],
-            icon: "fas fa-brain",
-            isAI: true
-        },
-         {
-            title: "Application Development in Flutter",
-            description: "Developing the application in flutter.",
-            features: [
-                "VS Code",
-                "Android Studio",
-                "Dart  Language",
-                "API Integration",
-                "State Management",
-                "UI/UX Design",
-                "Cross-Platform Development",
-                "Performance Optimization",
-                "Testing & Debugging",
-                "Deployment",
-            ],
-            icon: "fas fa-brain",
-            isAI: true
-        },
+    // function ServiceData()
+    // {
+    //     const servicesData = [
+    //     {
+    //         title: "Web Development",
+    //         description: "Custom web applications built with modern technologies and best practices.",
+    //         features: [
+    //             "Responsive Design",
+    //             "Modern Frameworks",
+    //             "Performance Optimization"
+    //         ],
+    //         icon: "fas fa-code",
+    //         isAI: false
+    //     },
+    //     {
+    //         title: "AI Solutions",
+    //         description: "Harnessing the power of AI to drive innovation and efficiency.",
+    //         features: [
+    //             "Machine Learning",
+    //             "Deep Learning",
+    //             "Natural Language Processing"
+    //         ],
+    //         icon: "fas fa-brain",
+    //         isAI: true
+    //     },
+    //      {
+    //         title: "Application Development in Flutter",
+    //         description: "Developing the application in flutter.",
+    //         features: [
+    //             "VS Code",
+    //             "Android Studio",
+    //             "Dart  Language",
+    //             "API Integration",
+    //             "State Management",
+    //             "UI/UX Design",
+    //             "Cross-Platform Development",
+    //             "Performance Optimization",
+    //             "Testing & Debugging",
+    //             "Deployment",
+    //         ],
+    //         icon: "fas fa-brain",
+    //         isAI: true
+    //     },
         // {
         //     title: "UI/UX Design",
         //     description: "Creating intuitive and engaging user experiences.",
@@ -231,19 +231,19 @@ const Helper=(function(){
         //     icon: "fas fa-palette",
         //     isAI: false
         // }
-    ];
+    // ];
 
-        return servicesData;
+    //     return servicesData;
 
-    }
+    // }
 
+
+// social Links Data Start
     function socialLinksData()
     {
         const socialLinks = [
-        { href: "#", iconClass: "fab fa-github" },
-        { href: "#", iconClass: "fab fa-linkedin" },
-        { href: "#", iconClass: "fab fa-twitter" },
-        { href: "#", iconClass: "fab fa-instagram" }
+        { href: "https://github.com/Iftikhar-jafry/", iconClass: "fab fa-github" },
+        { href: "https://www.linkedin.com/in/iftikhar-jafry/", iconClass: "fab fa-linkedin" },
         ];
         return socialLinks
     }
@@ -252,11 +252,11 @@ const Helper=(function(){
         AboutData:AboutData,
         SkillData:SkillData,
         ProjectData:ProjectData,
-        ServiceData:ServiceData,
+        // ServiceData:ServiceData,
         socialLinksData:socialLinksData
     }
 })();
-
+// Social Links Data End
 
 
 export default Helper;
